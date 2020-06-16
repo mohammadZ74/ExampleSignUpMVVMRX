@@ -29,10 +29,33 @@
 		F36CF1B62499306E00CF3D5B /* Bundle + ChangeLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1B52499306100CF3D5B /* Bundle + ChangeLanguage.swift */; };
 		F36CF1C72499391500CF3D5B /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1C12499391500CF3D5B /* RegisterCoordinator.swift */; };
 		F36CF1CB249939A100CF3D5B /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1CA2499398D00CF3D5B /* ProfileCoordinator.swift */; };
+		F36CF1D124993B6400CF3D5B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36CF1D024993B6400CF3D5B /* Login.storyboard */; };
+		F36CF1D324993B7500CF3D5B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1D224993B7500CF3D5B /* LoginViewModel.swift */; };
+		F36CF1DB24993B9200CF3D5B /* ExampleSignupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1DA24993B9200CF3D5B /* ExampleSignupTests.swift */; };
+		F36CF1E5249942F200CF3D5B /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1E4249942B200CF3D5B /* LoginProtocols.swift */; };
+		F36CF1E92499457100CF3D5B /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1E82499457100CF3D5B /* LoginManager.swift */; };
+		F36CF1EB249945C900CF3D5B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1EA249945C900CF3D5B /* User.swift */; };
+		F36CF1ED249956E300CF3D5B /* UserDefault + Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1EC249956E300CF3D5B /* UserDefault + Extentions.swift */; };
+		F36CF1F124996BBF00CF3D5B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1F024996BBF00CF3D5B /* LoginVC.swift */; };
+		F36CF1F324996D9200CF3D5B /* RegisterValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1F224996D9200CF3D5B /* RegisterValidation.swift */; };
+		F36CF1F72499723800CF3D5B /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36CF1F52499723800CF3D5B /* MessageView.xib */; };
+		F36CF1F82499723800CF3D5B /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1F62499723800CF3D5B /* MessageView.swift */; };
+		F36CF1FB2499729900CF3D5B /* UIView + Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1FA2499729900CF3D5B /* UIView + Tap.swift */; };
+		F36CF1FD249972C000CF3D5B /* UIView + Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1FC249972C000CF3D5B /* UIView + Fill.swift */; };
 		F3CFA92924991B0400348ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFA92824991B0400348ADC /* AppDelegate.swift */; };
 		F3CFA93224991B0500348ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA93124991B0500348ADC /* Assets.xcassets */; };
 		F3CFA93524991B0500348ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA93324991B0500348ADC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F36CF1DD24993B9200CF3D5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3CFA91D24991B0400348ADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3CFA92424991B0400348ADC;
+			remoteInfo = ExampleSignup;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B92EBC00F0E0EB09B4C0055 /* Pods-ExampleSignup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleSignup.debug.xcconfig"; path = "Target Support Files/Pods-ExampleSignup/Pods-ExampleSignup.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +82,21 @@
 		F36CF1B52499306100CF3D5B /* Bundle + ChangeLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle + ChangeLanguage.swift"; sourceTree = "<group>"; };
 		F36CF1C12499391500CF3D5B /* RegisterCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		F36CF1CA2499398D00CF3D5B /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		F36CF1D024993B6400CF3D5B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Login.storyboard; path = ExampleSignup/Scenes/Splash/View/Login.storyboard; sourceTree = SOURCE_ROOT; };
+		F36CF1D224993B7500CF3D5B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = ExampleSignup/Scenes/Splash/View/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
+		F36CF1D824993B9100CF3D5B /* ExampleSignupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleSignupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36CF1DA24993B9200CF3D5B /* ExampleSignupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSignupTests.swift; sourceTree = "<group>"; };
+		F36CF1DC24993B9200CF3D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36CF1E4249942B200CF3D5B /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		F36CF1E82499457100CF3D5B /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginManager.swift; path = ExampleSignup/Scenes/Splash/View/LoginManager.swift; sourceTree = SOURCE_ROOT; };
+		F36CF1EA249945C900CF3D5B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = ExampleSignup/Scenes/Splash/View/User.swift; sourceTree = SOURCE_ROOT; };
+		F36CF1EC249956E300CF3D5B /* UserDefault + Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault + Extentions.swift"; sourceTree = "<group>"; };
+		F36CF1F024996BBF00CF3D5B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F36CF1F224996D9200CF3D5B /* RegisterValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterValidation.swift; sourceTree = "<group>"; };
+		F36CF1F52499723800CF3D5B /* MessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		F36CF1F62499723800CF3D5B /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		F36CF1FA2499729900CF3D5B /* UIView + Tap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Tap.swift"; sourceTree = "<group>"; };
+		F36CF1FC249972C000CF3D5B /* UIView + Fill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Fill.swift"; sourceTree = "<group>"; };
 		F3CFA92524991B0400348ADC /* ExampleSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CFA92824991B0400348ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3CFA93124991B0500348ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +105,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F36CF1D524993B9100CF3D5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3CFA92224991B0400348ADC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +176,7 @@
 				F36CF170249921A200CF3D5B /* LanguageManager.swift */,
 				F36CF172249921A200CF3D5B /* Localizable.swift */,
 				F36CF173249921A200CF3D5B /* UserDefault.swift */,
+				F36CF1EC249956E300CF3D5B /* UserDefault + Extentions.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -138,6 +184,8 @@
 		F36CF1762499223700CF3D5B /* UIKit Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F36CF1F92499728400CF3D5B /* UIViewExtentions */,
+				F36CF1F42499723800CF3D5B /* MessageView */,
 				F36CF1B42499306100CF3D5B /* Bundle */,
 				F36CF1772499225200CF3D5B /* Coordinator */,
 				F36CF1842499243200CF3D5B /* LoadingView */,
@@ -232,6 +280,7 @@
 		F36CF1B72499391500CF3D5B /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				F36CF1CC24993AF300CF3D5B /* Login */,
 				F36CF1C02499391500CF3D5B /* RegisterCoordinator */,
 			);
 			path = Register;
@@ -261,10 +310,92 @@
 			path = ProfileCoordinator;
 			sourceTree = "<group>";
 		};
+		F36CF1CC24993AF300CF3D5B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F36CF1E62499443500CF3D5B /* Manager */,
+				F36CF1E32499428F00CF3D5B /* Protocols */,
+				F36CF1CF24993B5200CF3D5B /* Model */,
+				F36CF1CE24993B4C00CF3D5B /* ViewModel */,
+				F36CF1CD24993B4800CF3D5B /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F36CF1CD24993B4800CF3D5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F36CF1D024993B6400CF3D5B /* Login.storyboard */,
+				F36CF1F024996BBF00CF3D5B /* LoginVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F36CF1CE24993B4C00CF3D5B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F36CF1D224993B7500CF3D5B /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F36CF1CF24993B5200CF3D5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F36CF1EA249945C900CF3D5B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F36CF1D924993B9200CF3D5B /* ExampleSignupTests */ = {
+			isa = PBXGroup;
+			children = (
+				F36CF1DA24993B9200CF3D5B /* ExampleSignupTests.swift */,
+				F36CF1DC24993B9200CF3D5B /* Info.plist */,
+			);
+			path = ExampleSignupTests;
+			sourceTree = "<group>";
+		};
+		F36CF1E32499428F00CF3D5B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F36CF1E4249942B200CF3D5B /* LoginProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F36CF1E62499443500CF3D5B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F36CF1E82499457100CF3D5B /* LoginManager.swift */,
+				F36CF1F224996D9200CF3D5B /* RegisterValidation.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F36CF1F42499723800CF3D5B /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+				F36CF1F52499723800CF3D5B /* MessageView.xib */,
+				F36CF1F62499723800CF3D5B /* MessageView.swift */,
+			);
+			path = MessageView;
+			sourceTree = "<group>";
+		};
+		F36CF1F92499728400CF3D5B /* UIViewExtentions */ = {
+			isa = PBXGroup;
+			children = (
+				F36CF1FA2499729900CF3D5B /* UIView + Tap.swift */,
+				F36CF1FC249972C000CF3D5B /* UIView + Fill.swift */,
+			);
+			path = UIViewExtentions;
+			sourceTree = "<group>";
+		};
 		F3CFA91C24991B0400348ADC = {
 			isa = PBXGroup;
 			children = (
 				F3CFA92724991B0400348ADC /* ExampleSignup */,
+				F36CF1D924993B9200CF3D5B /* ExampleSignupTests */,
 				F3CFA92624991B0400348ADC /* Products */,
 				8EC690446E05A90CC66CD1A9 /* Pods */,
 				5C2643ACC61B0CD1EEBEA4C0 /* Frameworks */,
@@ -275,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				F3CFA92524991B0400348ADC /* ExampleSignup.app */,
+				F36CF1D824993B9100CF3D5B /* ExampleSignupTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -293,6 +425,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F36CF1D724993B9100CF3D5B /* ExampleSignupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36CF1DF24993B9200CF3D5B /* Build configuration list for PBXNativeTarget "ExampleSignupTests" */;
+			buildPhases = (
+				F36CF1D424993B9100CF3D5B /* Sources */,
+				F36CF1D524993B9100CF3D5B /* Frameworks */,
+				F36CF1D624993B9100CF3D5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F36CF1DE24993B9200CF3D5B /* PBXTargetDependency */,
+			);
+			name = ExampleSignupTests;
+			productName = ExampleSignupTests;
+			productReference = F36CF1D824993B9100CF3D5B /* ExampleSignupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F3CFA92424991B0400348ADC /* ExampleSignup */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3CFA93924991B0500348ADC /* Build configuration list for PBXNativeTarget "ExampleSignup" */;
@@ -322,6 +472,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Communere;
 				TargetAttributes = {
+					F36CF1D724993B9100CF3D5B = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = F3CFA92424991B0400348ADC;
+					};
 					F3CFA92424991B0400348ADC = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -342,18 +496,28 @@
 			projectRoot = "";
 			targets = (
 				F3CFA92424991B0400348ADC /* ExampleSignup */,
+				F36CF1D724993B9100CF3D5B /* ExampleSignupTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F36CF1D624993B9100CF3D5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3CFA92324991B0400348ADC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F3CFA93524991B0500348ADC /* LaunchScreen.storyboard in Resources */,
 				F36CF18A2499243C00CF3D5B /* LoadingView.xib in Resources */,
+				F36CF1D124993B6400CF3D5B /* Login.storyboard in Resources */,
 				F36CF16C2499211F00CF3D5B /* Localizable.strings in Resources */,
+				F36CF1F72499723800CF3D5B /* MessageView.xib in Resources */,
 				F36CF19C24992A9F00CF3D5B /* Splash.storyboard in Resources */,
 				F3CFA93224991B0500348ADC /* Assets.xcassets in Resources */,
 			);
@@ -404,33 +568,59 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F36CF1D424993B9100CF3D5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36CF1DB24993B9200CF3D5B /* ExampleSignupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3CFA92124991B0400348ADC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F3CFA92924991B0400348ADC /* AppDelegate.swift in Sources */,
+				F36CF1ED249956E300CF3D5B /* UserDefault + Extentions.swift in Sources */,
 				F36CF180249922D500CF3D5B /* UserDefault.swift in Sources */,
 				F36CF18C2499243C00CF3D5B /* loadingView.swift in Sources */,
 				F36CF1942499285900CF3D5B /* StoryboardNames.swift in Sources */,
 				F36CF17D249922CD00CF3D5B /* DataManager.swift in Sources */,
 				F36CF18B2499243C00CF3D5B /* LoadingViewable.swift in Sources */,
 				F36CF1B62499306E00CF3D5B /* Bundle + ChangeLanguage.swift in Sources */,
+				F36CF1E92499457100CF3D5B /* LoginManager.swift in Sources */,
+				F36CF1F124996BBF00CF3D5B /* LoginVC.swift in Sources */,
 				F36CF17E249922D000CF3D5B /* Localizable.swift in Sources */,
+				F36CF1D324993B7500CF3D5B /* LoginViewModel.swift in Sources */,
 				F36CF1832499233300CF3D5B /* ReactiveExtensiones.swift in Sources */,
 				F36CF17F249922D300CF3D5B /* LanguageManager.swift in Sources */,
+				F36CF1FB2499729900CF3D5B /* UIView + Tap.swift in Sources */,
 				F36CF1CB249939A100CF3D5B /* ProfileCoordinator.swift in Sources */,
 				F36CF1892499243C00CF3D5B /* AnimateloadingView.swift in Sources */,
 				F36CF1B324992FE600CF3D5B /* main.swift in Sources */,
 				F36CF17B249922C500CF3D5B /* MainCoordinator.swift in Sources */,
+				F36CF1E5249942F200CF3D5B /* LoginProtocols.swift in Sources */,
 				F36CF19E24992AB400CF3D5B /* SplashVC.swift in Sources */,
 				F36CF17C249922C900CF3D5B /* Coordinator.swift in Sources */,
+				F36CF1FD249972C000CF3D5B /* UIView + Fill.swift in Sources */,
+				F36CF1F82499723800CF3D5B /* MessageView.swift in Sources */,
 				F36CF1922499285900CF3D5B /* ViewContollerLoadable.swift in Sources */,
 				F36CF1C72499391500CF3D5B /* RegisterCoordinator.swift in Sources */,
 				F36CF1952499285900CF3D5B /* AddChildViewController.swift in Sources */,
+				F36CF1EB249945C900CF3D5B /* User.swift in Sources */,
+				F36CF1F324996D9200CF3D5B /* RegisterValidation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F36CF1DE24993B9200CF3D5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3CFA92424991B0400348ADC /* ExampleSignup */;
+			targetProxy = F36CF1DD24993B9200CF3D5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F36CF16E2499211F00CF3D5B /* Localizable.strings */ = {
@@ -452,6 +642,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F36CF1E024993B9200CF3D5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9H5P3R5C2;
+				INFOPLIST_FILE = ExampleSignupTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Com.ExampleSignupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleSignup.app/ExampleSignup";
+			};
+			name = Debug;
+		};
+		F36CF1E124993B9200CF3D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9H5P3R5C2;
+				INFOPLIST_FILE = ExampleSignupTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Com.ExampleSignupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleSignup.app/ExampleSignup";
+			};
+			name = Release;
+		};
 		F3CFA93724991B0500348ADC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -611,6 +843,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F36CF1DF24993B9200CF3D5B /* Build configuration list for PBXNativeTarget "ExampleSignupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36CF1E024993B9200CF3D5B /* Debug */,
+				F36CF1E124993B9200CF3D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3CFA92024991B0400348ADC /* Build configuration list for PBXProject "ExampleSignup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

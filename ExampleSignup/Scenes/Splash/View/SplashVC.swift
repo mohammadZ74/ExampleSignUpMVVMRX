@@ -12,7 +12,7 @@ class SplashVC: UIViewController {
     
     @IBOutlet var versionLabel: UILabel!
     
-    @Localizable var versionLabelText: String = "Signup"
+    @Localizable var versionLabelText: String = "1.0.0"
     
     weak var parentCoordinator: MainCoordinator?
 
@@ -20,6 +20,8 @@ class SplashVC: UIViewController {
         super.viewDidLoad()
         
         versionLabel.text = versionLabelText
+        
+        parentCoordinator?.toLoginScreen()
         // Do any additional setup after loading the view.
     }
 

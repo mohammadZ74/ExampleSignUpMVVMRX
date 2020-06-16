@@ -13,8 +13,6 @@ class ProfileCoordinator: Coordinator {
     
     weak var parentCoordinator: MainCoordinator?
     
-    weak var registerFinishDelegate: RegisterCoordinatorFinishDelegate?
-    
     var childCoordinators: [Coordinator]?
     
     var navigationCoordinator: UINavigationController

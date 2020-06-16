@@ -8,15 +8,11 @@
 
 import UIKit
 
-protocol RegisterCoordinatorFinishDelegate: class {
-    func onFinish(coordinator: Coordinator)
-}
 
 class RegisterCoordinator: Coordinator {
     
     weak var parentCoordinator: MainCoordinator?
-    
-    weak var registerFinishDelegate: RegisterCoordinatorFinishDelegate?
+
     
     var childCoordinators: [Coordinator]?
     
@@ -28,12 +24,8 @@ class RegisterCoordinator: Coordinator {
     }
 
     func start() {
-        
-    }
-    
-    func goToMainPage() {
-        registerFinishDelegate?.onFinish(coordinator: self)
-        parentCoordinator?.toHomeScene()
+        let loginVC = LoginVC.instantiate(storyboard: .login)
+        navigationCoordinator.pushViewController(loginVC, animated: true)
     }
     
     deinit {

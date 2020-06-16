@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpy-Jd-QkR">
-                                <rect key="frame" x="16" y="442.5" width="42" height="21"/>
+                                <rect key="frame" x="186" y="825" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -25,8 +25,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Lpy-Jd-QkR" firstAttribute="leading" secondItem="Xr3-VZ-Kwb" secondAttribute="leading" constant="16" id="nhx-DD-eTs"/>
-                            <constraint firstItem="Lpy-Jd-QkR" firstAttribute="centerY" secondItem="Xr3-VZ-Kwb" secondAttribute="centerY" id="zLn-6E-d0g"/>
+                            <constraint firstItem="Xr3-VZ-Kwb" firstAttribute="bottom" secondItem="Lpy-Jd-QkR" secondAttribute="bottom" constant="16" id="7se-vh-aBg"/>
+                            <constraint firstItem="Lpy-Jd-QkR" firstAttribute="centerX" secondItem="Xr3-VZ-Kwb" secondAttribute="centerX" id="GND-Eg-AdP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xr3-VZ-Kwb"/>
                     </view>

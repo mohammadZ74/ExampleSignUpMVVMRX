@@ -12,11 +12,6 @@ enum UserDefaultsKeys: String {
     
     case appleLanguages  = "AppleLanguages"
     case currentLanguage = "currentLanguage"
-    case userTheme       = "UserTheme"
-    //ofCourse this is temporary and will be moved to keychain
-    case accessToken     = "accessToken"
-    case isUserLoggedIn  = "isUserLoggedIn"
-    case userMobile      = "userMobile"
 }
 
 @propertyWrapper
@@ -46,15 +41,6 @@ struct UserDefaultsConfig {
     
     @UserDefault(.appleLanguages, defaultValue: ["en"])
     static var appleLanguage: [String]
-    
-    @UserDefault(.accessToken, defaultValue: "")
-    static var accessToken: String
-    
-    @UserDefault(.userMobile, defaultValue: "")
-    static var userMobile: String
-    
-    @UserDefault(.isUserLoggedIn, defaultValue: false)
-    static var isUserLoggedIn: Bool
     
     static func clearUserDefaultfor(_ key: UserDefaultsKeys) {
         UserDefaults.standard.removeObject(forKey: key.rawValue)

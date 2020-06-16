@@ -41,9 +41,13 @@ class MainCoordinator: NSObject, Coordinator {
         splashVC.parentCoordinator = self
     }
     
-    func toHomeScene() {
+    func toLoginScreen() {
         
         navigationCoordinator.setViewControllers([], animated: false)
+        let child = RegisterCoordinator(navigationController: navigationCoordinator)
+        child.parentCoordinator = self
+        childCoordinators?.append(child)
+        child.start()
         
     }
     
