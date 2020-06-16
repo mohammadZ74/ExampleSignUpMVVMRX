@@ -27,6 +27,7 @@
 		F36CF19E24992AB400CF3D5B /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF19D24992AB400CF3D5B /* SplashVC.swift */; };
 		F36CF1B324992FE600CF3D5B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1B224992FE600CF3D5B /* main.swift */; };
 		F36CF1B62499306E00CF3D5B /* Bundle + ChangeLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1B52499306100CF3D5B /* Bundle + ChangeLanguage.swift */; };
+		F36CF1C72499391500CF3D5B /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1C12499391500CF3D5B /* RegisterCoordinator.swift */; };
 		F3CFA92924991B0400348ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFA92824991B0400348ADC /* AppDelegate.swift */; };
 		F3CFA93224991B0500348ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA93124991B0500348ADC /* Assets.xcassets */; };
 		F3CFA93524991B0500348ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA93324991B0500348ADC /* LaunchScreen.storyboard */; };
@@ -55,6 +56,7 @@
 		F36CF19D24992AB400CF3D5B /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		F36CF1B224992FE600CF3D5B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F36CF1B52499306100CF3D5B /* Bundle + ChangeLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle + ChangeLanguage.swift"; sourceTree = "<group>"; };
+		F36CF1C12499391500CF3D5B /* RegisterCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		F3CFA92524991B0400348ADC /* ExampleSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CFA92824991B0400348ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3CFA93124991B0500348ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		F36CF19624992A3E00CF3D5B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F36CF1B72499391500CF3D5B /* Register */,
 				F36CF19924992A6900CF3D5B /* Splash */,
 			);
 			path = Scenes;
@@ -221,6 +224,22 @@
 				F36CF1B52499306100CF3D5B /* Bundle + ChangeLanguage.swift */,
 			);
 			path = Bundle;
+			sourceTree = "<group>";
+		};
+		F36CF1B72499391500CF3D5B /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F36CF1C02499391500CF3D5B /* RegisterCoordinator */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		F36CF1C02499391500CF3D5B /* RegisterCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F36CF1C12499391500CF3D5B /* RegisterCoordinator.swift */,
+			);
+			path = RegisterCoordinator;
 			sourceTree = "<group>";
 		};
 		F3CFA91C24991B0400348ADC = {
@@ -386,6 +405,7 @@
 				F36CF19E24992AB400CF3D5B /* SplashVC.swift in Sources */,
 				F36CF17C249922C900CF3D5B /* Coordinator.swift in Sources */,
 				F36CF1922499285900CF3D5B /* ViewContollerLoadable.swift in Sources */,
+				F36CF1C72499391500CF3D5B /* RegisterCoordinator.swift in Sources */,
 				F36CF1952499285900CF3D5B /* AddChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
