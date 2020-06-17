@@ -46,7 +46,8 @@ class RegisterVM {
             let isAdmin = fullName == "admin"
             let user = User(fullName: fullName, mail: email, password: password, image: image, isAdmin: isAdmin)
             isSigningup?(true)
-            registerService.signUpUserWith(user: user) { (result) in
+            registerService.signUpUserWith(user: user) { [weak self] (result) in
+                guard let self = self else {return}
                 self.isSigningup?(false)
                 switch result {
                 case .success(let isSuccess):

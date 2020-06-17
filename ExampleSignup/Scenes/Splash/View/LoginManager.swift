@@ -11,6 +11,7 @@ import Foundation
 typealias LoginCompletionHandler = (Result<User, ValidationResult>) -> Void
 typealias SignupCompletionHandler = (Result<Bool, ValidationResult>) -> Void
 typealias EditUserCompletionHandler = (Result<User, ValidationResult>) -> Void
+typealias deleteUserCompletionHandler = (Result<Bool, ValidationResult>) -> Void
 
 protocol UserManagerProtocol {
     var userdefault: UserDefaults { get set }
@@ -19,6 +20,7 @@ protocol UserManagerProtocol {
     func loginUserWith(email: String, password: String, completion: @escaping LoginCompletionHandler)
     func signUpUserWith(user: User, completion: @escaping SignupCompletionHandler)
     func editUser(user: User, completion: @escaping EditUserCompletionHandler)
+    func deleteUser(user: User, completion: @escaping deleteUserCompletionHandler)
 }
 
 class UserManager {
@@ -98,7 +100,7 @@ extension UserManager: UserManagerProtocol {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             
             // check for existing user
-            if self.users.contains(where: {$0.mail == user.mail}) {
+            if self.users.contains(where: {$0.mail == user.mail && $0.username == user.username}) {
                 completion(.failure(.failed(message: "User with given username already exist!")))
                 return
             }
@@ -112,6 +114,29 @@ extension UserManager: UserManagerProtocol {
             self.userdefault.synchronize()
             
             completion(.success(user))
+            return
+        }
+        
+    }
+    
+    func deleteUser(user: User, completion: @escaping deleteUserCompletionHandler) {
+        
+        // Simulating API Call
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            
+            // check for existing user
+            if self.users.contains(where: {$0.mail == user.mail}) == false {
+                completion(.failure(.failed(message: "User Not found with current email")))
+                return
+            }
+            // remove the user from database
+            self.users.removeAll(where: {$0.mail == $0.mail})
+            
+            // setting new data to database.
+            self.userdefault.set(encodable: self.users, forKey: UserDefaultkeys.users)
+            self.userdefault.synchronize()
+            
+            completion(.success(true))
             return
         }
         

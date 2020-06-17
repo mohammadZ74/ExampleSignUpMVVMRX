@@ -48,8 +48,9 @@ class LoginVC: UIViewController {
         .disposed(by: disposeBag)
         
         loginViewModel.signedInUser
-            .subscribe(onNext: { (user) in
-                print(user)
+            .subscribe(onNext: { [weak self] (user) in
+                guard let self = self else {return}
+                self.registerCoordinator?.loginWith(user: user)
             }).disposed(by: disposeBag)
         
         signupBtn.rx

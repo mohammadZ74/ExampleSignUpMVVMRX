@@ -51,4 +51,10 @@ class MainCoordinator: NSObject, Coordinator {
         
     }
     
+    func toProfileScreenWith(user: User) {
+        let child = ProfileCoordinator(navigationController: navigationCoordinator, user: user)
+        child.parentCoordinator = self
+        childCoordinators?.append(child)
+        child.start()
+    }
 }

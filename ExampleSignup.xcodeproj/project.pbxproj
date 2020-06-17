@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0F512F4D1DA0BB7353FCAEE4 /* Pods_ExampleSignup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76202ADB07E1AA636CE1066B /* Pods_ExampleSignup.framework */; };
+		F354AA73249AA40A0087E0DC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F354AA72249AA40A0087E0DC /* Profile.storyboard */; };
+		F354AA75249AA5D70087E0DC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354AA74249AA5D70087E0DC /* ProfileVC.swift */; };
+		F354AA78249AA9C80087E0DC /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354AA77249AA9C80087E0DC /* ProfileVM.swift */; };
 		F36CF16C2499211F00CF3D5B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F36CF16E2499211F00CF3D5B /* Localizable.strings */; };
 		F36CF17B249922C500CF3D5B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1792499225200CF3D5B /* MainCoordinator.swift */; };
 		F36CF17C249922C900CF3D5B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF17A2499225200CF3D5B /* Coordinator.swift */; };
@@ -64,6 +67,9 @@
 		0B92EBC00F0E0EB09B4C0055 /* Pods-ExampleSignup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleSignup.debug.xcconfig"; path = "Target Support Files/Pods-ExampleSignup/Pods-ExampleSignup.debug.xcconfig"; sourceTree = "<group>"; };
 		76202ADB07E1AA636CE1066B /* Pods_ExampleSignup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleSignup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B8AA4B6E564714C4090AC9 /* Pods-ExampleSignup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleSignup.release.xcconfig"; path = "Target Support Files/Pods-ExampleSignup/Pods-ExampleSignup.release.xcconfig"; sourceTree = "<group>"; };
+		F354AA72249AA40A0087E0DC /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		F354AA74249AA5D70087E0DC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		F354AA77249AA9C80087E0DC /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
 		F36CF16D2499211F00CF3D5B /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F36CF170249921A200CF3D5B /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		F36CF171249921A200CF3D5B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -144,6 +150,23 @@
 				C0B8AA4B6E564714C4090AC9 /* Pods-ExampleSignup.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F354AA71249AA3FA0087E0DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F354AA72249AA40A0087E0DC /* Profile.storyboard */,
+				F354AA74249AA5D70087E0DC /* ProfileVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F354AA76249AA9BB0087E0DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F354AA77249AA9C80087E0DC /* ProfileVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F36CF16624991E7900CF3D5B /* Support */ = {
@@ -304,6 +327,8 @@
 		F36CF1C82499396F00CF3D5B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F354AA76249AA9BB0087E0DC /* ViewModel */,
+				F354AA71249AA3FA0087E0DC /* View */,
 				F36CF1C92499397B00CF3D5B /* ProfileCoordinator */,
 			);
 			path = Profile;
@@ -552,6 +577,7 @@
 				F36CF16C2499211F00CF3D5B /* Localizable.strings in Resources */,
 				F36CF1F72499723800CF3D5B /* MessageView.xib in Resources */,
 				F36CF19C24992A9F00CF3D5B /* Splash.storyboard in Resources */,
+				F354AA73249AA40A0087E0DC /* Profile.storyboard in Resources */,
 				F37941E0249A069400BDFAE0 /* Signup.storyboard in Resources */,
 				F3CFA93224991B0500348ADC /* Assets.xcassets in Resources */,
 			);
@@ -634,6 +660,7 @@
 				F36CF1892499243C00CF3D5B /* AnimateloadingView.swift in Sources */,
 				F37941DF2499F8F100BDFAE0 /* RegisterViewModel.swift in Sources */,
 				F36CF1B324992FE600CF3D5B /* main.swift in Sources */,
+				F354AA75249AA5D70087E0DC /* ProfileVC.swift in Sources */,
 				F36CF17B249922C500CF3D5B /* MainCoordinator.swift in Sources */,
 				F36CF1E5249942F200CF3D5B /* LoginProtocols.swift in Sources */,
 				F36CF19E24992AB400CF3D5B /* SplashVC.swift in Sources */,
@@ -641,6 +668,7 @@
 				F36CF1FD249972C000CF3D5B /* UIView + Fill.swift in Sources */,
 				F36CF1F82499723800CF3D5B /* MessageView.swift in Sources */,
 				F36CF1922499285900CF3D5B /* ViewContollerLoadable.swift in Sources */,
+				F354AA78249AA9C80087E0DC /* ProfileVM.swift in Sources */,
 				F36CF1C72499391500CF3D5B /* RegisterCoordinator.swift in Sources */,
 				F36CF1952499285900CF3D5B /* AddChildViewController.swift in Sources */,
 				F36CF1EB249945C900CF3D5B /* User.swift in Sources */,

@@ -14,6 +14,7 @@ struct User: Codable {
     var mail: String
     var password: String
     var isAdmin: Bool
+    var username: String?
     private var userImageData: Data?
     
     init(fullName: String, mail: String, password: String, image: UIImage, isAdmin: Bool) {

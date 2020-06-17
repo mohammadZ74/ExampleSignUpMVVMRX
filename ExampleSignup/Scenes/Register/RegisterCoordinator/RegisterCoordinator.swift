@@ -36,6 +36,10 @@ class RegisterCoordinator: Coordinator {
         navigationCoordinator.pushViewController(signup, animated: true)
     }
     
+    func loginWith(user: User) {
+        parentCoordinator?.toProfileScreenWith(user: user)
+    }
+    
     func didFinishSignup() {
         navigationCoordinator.popViewController(animated: true)
     }
