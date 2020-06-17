@@ -18,7 +18,7 @@ enum ValidationResult: Error, Equatable {
 
 protocol RegisterValidationService {
     func validateUsername(_ username: String) -> Observable<ValidationResult>
-    func validatePassword(_ password: String) -> Observable<ValidationResult>
+    func validatePassword(_ password: String) -> ValidationResult
     func validateRepeatedPassword(_ password: String, repeatedPassword: String) -> ValidationResult
 }
 

@@ -15,6 +15,7 @@ class LoginVC: UIViewController {
     @IBOutlet var usernameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     @IBOutlet var signInButton: UIButton!
+    @IBOutlet var signupBtn: UIButton!
     
     weak var registerCoordinator: RegisterCoordinator?
     
@@ -51,6 +52,12 @@ class LoginVC: UIViewController {
                 print(user)
             }).disposed(by: disposeBag)
         
+        signupBtn.rx
+            .tap
+            .subscribe(onNext: { [weak self] (_) in
+                guard let self = self else {return}
+                self.registerCoordinator?.toSignUp()
+            }).disposed(by: disposeBag)
         
     }
     

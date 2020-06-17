@@ -10,15 +10,15 @@ import UIKit
 
 struct User: Codable {
     
-    var username: String
+    var fullName: String
     var mail: String
     var password: String
     var isAdmin: Bool
     private var userImageData: Data?
     
-    init(username: String, mail: String, password: String, image: UIImage, isAdmin: Bool) {
+    init(fullName: String, mail: String, password: String, image: UIImage, isAdmin: Bool) {
         
-        self.username = username
+        self.fullName = fullName
         self.mail     = mail
         self.password = password
         self.isAdmin  = isAdmin
@@ -27,7 +27,7 @@ struct User: Codable {
     }
     
     init() {
-        self.username = ""
+        self.fullName = ""
         self.mail     = ""
         self.password = ""
         self.isAdmin  = false

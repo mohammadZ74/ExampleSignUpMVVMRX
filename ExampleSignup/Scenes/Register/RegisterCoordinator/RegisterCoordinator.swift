@@ -19,14 +19,27 @@ class RegisterCoordinator: Coordinator {
     var navigationCoordinator: UINavigationController
 
     init(navigationController: UINavigationController) {
-        navigationController.setNavigationBarHidden(true, animated: false)
         self.navigationCoordinator = navigationController
     }
 
     func start() {
         let loginVC = LoginVC.instantiate(storyboard: .login)
+        navigationCoordinator.setNavigationBarHidden(true, animated: true)
+        loginVC.registerCoordinator = self
         navigationCoordinator.pushViewController(loginVC, animated: true)
     }
+    
+    func toSignUp() {
+        let signup = SignupVC.instantiate(storyboard: .register)
+        navigationCoordinator.setNavigationBarHidden(false, animated: true)
+        signup.registerCoordinator = self
+        navigationCoordinator.pushViewController(signup, animated: true)
+    }
+    
+    func didFinishSignup() {
+        navigationCoordinator.popViewController(animated: true)
+    }
+    
     
     deinit {
         print("REMOVED \(self) FROM MEMORY")

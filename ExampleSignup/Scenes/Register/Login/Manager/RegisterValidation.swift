@@ -24,14 +24,14 @@ class RegisterValidation: RegisterValidationService {
         return .just(.valid)
     }
     
-    func validatePassword(_ password: String) -> Observable<ValidationResult> {
+    func validatePassword(_ password: String) -> ValidationResult {
         if password.isEmpty {
-            return .just(.failed(message: "Empty text"))
+            return .failed(message: "Empty text")
         }
         if password.numberAndCapitalComplexity() == false {
-            return .just(.failed(message: "Password Complexity Error"))
+            return .failed(message: "Password Complexity Error")
         }
-        return .just(.valid)
+        return .valid
     }
     
     
@@ -39,12 +39,11 @@ class RegisterValidation: RegisterValidationService {
         if repeatedPassword.count == 0 {
             return .failed(message: "Empty text")
         }
-        
-        if repeatedPassword == password {
-            return .failed(message: "Password repeated")
+        if repeatedPassword != password {
+            return .failed(message: "Password and confirm password is not same")
         }
         else {
-            return .failed(message: "Password different")
+            return .valid
         }
     }
     

@@ -39,7 +39,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iZv-HC-Qaz">
                                         <rect key="frame" x="0.0" y="123" width="382" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="YMl-Kx-zVI">
                                         <rect key="frame" x="0.0" y="173" width="382" height="30"/>
@@ -68,6 +68,7 @@
                     <connections>
                         <outlet property="passwordTF" destination="iZv-HC-Qaz" id="CYL-TM-Imh"/>
                         <outlet property="signInButton" destination="9i6-L1-vqJ" id="rE8-bi-Nf4"/>
+                        <outlet property="signupBtn" destination="wkk-a1-IQ4" id="wPv-CI-8XL"/>
                         <outlet property="usernameTF" destination="TV6-jY-kmQ" id="6bg-pf-fkg"/>
                     </connections>
                 </viewController>

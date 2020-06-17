@@ -52,7 +52,7 @@ extension UserManager: UserManagerProtocol {
             // No need for capturing self because of the main dispatchQueue will release self after finishes
             
             // check if any users are exist with given credential
-            let user = self.users.filter {$0.username == email}.first
+            let user = self.users.filter {$0.mail == email}.first
             
             guard let foundedUser = user else {
             // no user found so user not exist with given email
@@ -79,7 +79,7 @@ extension UserManager: UserManagerProtocol {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             
             // check for existing user
-            if self.users.contains(where: {$0.username == user.username}) {
+            if self.users.contains(where: {$0.mail == user.mail}) {
                 completion(.failure(.failed(message: "User already exist!")))
                 return
             }
@@ -98,12 +98,12 @@ extension UserManager: UserManagerProtocol {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             
             // check for existing user
-            if self.users.contains(where: {$0.username == user.username}) {
+            if self.users.contains(where: {$0.mail == user.mail}) {
                 completion(.failure(.failed(message: "User with given username already exist!")))
                 return
             }
             // remove the user from database
-            self.users.removeAll(where: {$0.username == $0.username})
+            self.users.removeAll(where: {$0.mail == $0.mail})
             // adding new edited user to database
             self.users.append(user)
             
