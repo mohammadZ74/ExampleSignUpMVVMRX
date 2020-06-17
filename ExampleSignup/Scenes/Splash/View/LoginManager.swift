@@ -105,7 +105,7 @@ extension UserManager: UserManagerProtocol {
                 return
             }
             // remove the user from database
-            self.users.removeAll(where: {$0.mail == $0.mail})
+            self.users.removeAll(where: {$0.mail == user.mail})
             // adding new edited user to database
             self.users.append(user)
             
@@ -130,7 +130,7 @@ extension UserManager: UserManagerProtocol {
                 return
             }
             // remove the user from database
-            self.users.removeAll(where: {$0.mail == $0.mail})
+            self.users.removeAll(where: {$0.mail == user.mail})
             
             // setting new data to database.
             self.userdefault.set(encodable: self.users, forKey: UserDefaultkeys.users)

@@ -27,17 +27,24 @@ class ProfileCoordinator: Coordinator {
 
     func start() {
         if user.isAdmin {
-            // to admin list users
+            toUserLists()
         } else {
-            toProfile()
+            toProfile(with: user)
         }
     }
-    func toProfile() {
+    func toProfile(with profileUser: User) {
         let profileVC = ProfileVC.instantiate(storyboard: .profile)
         profileVC.profileCoordiantor = self 
-        let profileVM = ProfileVM(userManager: UserManager.shared, user: self.user)
+        let profileVM = ProfileVM(userManager: UserManager.shared, user: profileUser)
         profileVC.profileVM = profileVM
+        profileVC.isAdmin = user.isAdmin
         navigationCoordinator.pushViewController(profileVC, animated: true)
+    }
+    
+    func toUserLists() {
+        let userListsVC = UserListsVC.instantiate(storyboard: .userLists)
+        userListsVC.profileCoordinator = self
+        navigationCoordinator.pushViewController(userListsVC, animated: true)
     }
     
     func toSignout() {

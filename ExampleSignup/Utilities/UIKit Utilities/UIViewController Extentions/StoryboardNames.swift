@@ -15,6 +15,7 @@ enum Storyboard {
     case login
     case register
     case profile
+    case userLists
     
     var storyboard: UIStoryboard {
         
@@ -29,6 +30,8 @@ enum Storyboard {
             storyboardName = "Signup"
         case .profile:
             storyboardName = "Profile"
+        case .userLists:
+            storyboardName = "UserLists"
             
         }
         return UIStoryboard(name: storyboardName, bundle: Bundle.main)

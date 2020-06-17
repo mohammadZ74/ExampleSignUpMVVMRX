@@ -11,6 +11,10 @@
 		F354AA73249AA40A0087E0DC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F354AA72249AA40A0087E0DC /* Profile.storyboard */; };
 		F354AA75249AA5D70087E0DC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354AA74249AA5D70087E0DC /* ProfileVC.swift */; };
 		F354AA78249AA9C80087E0DC /* ProfileVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354AA77249AA9C80087E0DC /* ProfileVM.swift */; };
+		F354AA7D249AB6970087E0DC /* UserLists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F354AA7C249AB6970087E0DC /* UserLists.storyboard */; };
+		F354AA7F249AB6B90087E0DC /* UserListsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354AA7E249AB6B90087E0DC /* UserListsVC.swift */; };
+		F354AA84249AB7120087E0DC /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354AA82249AB7120087E0DC /* UserListTableViewCell.swift */; };
+		F354AA85249AB7120087E0DC /* UserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F354AA83249AB7120087E0DC /* UserListTableViewCell.xib */; };
 		F36CF16C2499211F00CF3D5B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F36CF16E2499211F00CF3D5B /* Localizable.strings */; };
 		F36CF17B249922C500CF3D5B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1792499225200CF3D5B /* MainCoordinator.swift */; };
 		F36CF17C249922C900CF3D5B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF17A2499225200CF3D5B /* Coordinator.swift */; };
@@ -48,6 +52,7 @@
 		F37941DD2499F70600BDFAE0 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37941DC2499F2DE00BDFAE0 /* SignupVC.swift */; };
 		F37941DF2499F8F100BDFAE0 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37941DE2499F8F100BDFAE0 /* RegisterViewModel.swift */; };
 		F37941E0249A069400BDFAE0 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37941DB2499F2DE00BDFAE0 /* Signup.storyboard */; };
+		F3C7A8DF249AC0DE00AF7A9C /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7A8DE249AC0DE00AF7A9C /* UserListViewModel.swift */; };
 		F3CFA92924991B0400348ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFA92824991B0400348ADC /* AppDelegate.swift */; };
 		F3CFA93224991B0500348ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA93124991B0500348ADC /* Assets.xcassets */; };
 		F3CFA93524991B0500348ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA93324991B0500348ADC /* LaunchScreen.storyboard */; };
@@ -70,6 +75,10 @@
 		F354AA72249AA40A0087E0DC /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		F354AA74249AA5D70087E0DC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F354AA77249AA9C80087E0DC /* ProfileVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVM.swift; sourceTree = "<group>"; };
+		F354AA7C249AB6970087E0DC /* UserLists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserLists.storyboard; sourceTree = "<group>"; };
+		F354AA7E249AB6B90087E0DC /* UserListsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListsVC.swift; sourceTree = "<group>"; };
+		F354AA82249AB7120087E0DC /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		F354AA83249AB7120087E0DC /* UserListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewCell.xib; sourceTree = "<group>"; };
 		F36CF16D2499211F00CF3D5B /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F36CF170249921A200CF3D5B /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		F36CF171249921A200CF3D5B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -109,6 +118,7 @@
 		F37941DB2499F2DE00BDFAE0 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		F37941DC2499F2DE00BDFAE0 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		F37941DE2499F8F100BDFAE0 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		F3C7A8DE249AC0DE00AF7A9C /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		F3CFA92524991B0400348ADC /* ExampleSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CFA92824991B0400348ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3CFA93124991B0500348ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +177,51 @@
 				F354AA77249AA9C80087E0DC /* ProfileVM.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F354AA79249AB65D0087E0DC /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F3C7A8DD249AC0C900AF7A9C /* ViewModel */,
+				F354AA7B249AB6870087E0DC /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		F354AA7A249AB6660087E0DC /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				F354AA76249AA9BB0087E0DC /* ViewModel */,
+				F354AA71249AA3FA0087E0DC /* View */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		F354AA7B249AB6870087E0DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F354AA80249AB6D70087E0DC /* SubViews */,
+				F354AA7C249AB6970087E0DC /* UserLists.storyboard */,
+				F354AA7E249AB6B90087E0DC /* UserListsVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F354AA80249AB6D70087E0DC /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				F354AA81249AB6DE0087E0DC /* Cells */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		F354AA81249AB6DE0087E0DC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F354AA82249AB7120087E0DC /* UserListTableViewCell.swift */,
+				F354AA83249AB7120087E0DC /* UserListTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F36CF16624991E7900CF3D5B /* Support */ = {
@@ -327,8 +382,8 @@
 		F36CF1C82499396F00CF3D5B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				F354AA76249AA9BB0087E0DC /* ViewModel */,
-				F354AA71249AA3FA0087E0DC /* View */,
+				F354AA7A249AB6660087E0DC /* EditProfile */,
+				F354AA79249AB65D0087E0DC /* List */,
 				F36CF1C92499397B00CF3D5B /* ProfileCoordinator */,
 			);
 			path = Profile;
@@ -447,6 +502,14 @@
 				F37941DC2499F2DE00BDFAE0 /* SignupVC.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F3C7A8DD249AC0C900AF7A9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3C7A8DE249AC0DE00AF7A9C /* UserListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F3CFA91C24991B0400348ADC = {
@@ -572,8 +635,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3CFA93524991B0500348ADC /* LaunchScreen.storyboard in Resources */,
+				F354AA85249AB7120087E0DC /* UserListTableViewCell.xib in Resources */,
 				F36CF18A2499243C00CF3D5B /* LoadingView.xib in Resources */,
 				F36CF1D124993B6400CF3D5B /* Login.storyboard in Resources */,
+				F354AA7D249AB6970087E0DC /* UserLists.storyboard in Resources */,
 				F36CF16C2499211F00CF3D5B /* Localizable.strings in Resources */,
 				F36CF1F72499723800CF3D5B /* MessageView.xib in Resources */,
 				F36CF19C24992A9F00CF3D5B /* Splash.storyboard in Resources */,
@@ -652,6 +717,8 @@
 				F36CF1E92499457100CF3D5B /* LoginManager.swift in Sources */,
 				F36CF1F124996BBF00CF3D5B /* LoginVC.swift in Sources */,
 				F36CF17E249922D000CF3D5B /* Localizable.swift in Sources */,
+				F354AA7F249AB6B90087E0DC /* UserListsVC.swift in Sources */,
+				F3C7A8DF249AC0DE00AF7A9C /* UserListViewModel.swift in Sources */,
 				F36CF1D324993B7500CF3D5B /* LoginViewModel.swift in Sources */,
 				F36CF1832499233300CF3D5B /* ReactiveExtensiones.swift in Sources */,
 				F36CF17F249922D300CF3D5B /* LanguageManager.swift in Sources */,
@@ -659,6 +726,7 @@
 				F36CF1CB249939A100CF3D5B /* ProfileCoordinator.swift in Sources */,
 				F36CF1892499243C00CF3D5B /* AnimateloadingView.swift in Sources */,
 				F37941DF2499F8F100BDFAE0 /* RegisterViewModel.swift in Sources */,
+				F354AA84249AB7120087E0DC /* UserListTableViewCell.swift in Sources */,
 				F36CF1B324992FE600CF3D5B /* main.swift in Sources */,
 				F354AA75249AA5D70087E0DC /* ProfileVC.swift in Sources */,
 				F36CF17B249922C500CF3D5B /* MainCoordinator.swift in Sources */,
