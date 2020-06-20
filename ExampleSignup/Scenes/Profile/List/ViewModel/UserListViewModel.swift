@@ -29,7 +29,7 @@ class UserListViewModel {
             self.isLoading.onNext(false)
             switch result {
             case .success(_):
-                self.users.onNext(userManager.users.filter {$0.isAdmin == false})
+                self.users.onNext(self.userManager.users.filter {$0.isAdmin == false})
             case .failure(let validation):
                 self.userListErrors.onNext(validation)
             }
