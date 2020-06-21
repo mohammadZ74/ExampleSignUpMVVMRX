@@ -22,7 +22,6 @@
 		F36CF17E249922D000CF3D5B /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF172249921A200CF3D5B /* Localizable.swift */; };
 		F36CF17F249922D300CF3D5B /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF170249921A200CF3D5B /* LanguageManager.swift */; };
 		F36CF180249922D500CF3D5B /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF173249921A200CF3D5B /* UserDefault.swift */; };
-		F36CF1832499233300CF3D5B /* ReactiveExtensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1822499233300CF3D5B /* ReactiveExtensiones.swift */; };
 		F36CF1892499243C00CF3D5B /* AnimateloadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1852499243200CF3D5B /* AnimateloadingView.swift */; };
 		F36CF18A2499243C00CF3D5B /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F36CF1862499243200CF3D5B /* LoadingView.xib */; };
 		F36CF18B2499243C00CF3D5B /* LoadingViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CF1872499243200CF3D5B /* LoadingViewable.swift */; };
@@ -52,6 +51,7 @@
 		F37941DD2499F70600BDFAE0 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37941DC2499F2DE00BDFAE0 /* SignupVC.swift */; };
 		F37941DF2499F8F100BDFAE0 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37941DE2499F8F100BDFAE0 /* RegisterViewModel.swift */; };
 		F37941E0249A069400BDFAE0 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37941DB2499F2DE00BDFAE0 /* Signup.storyboard */; };
+		F38F846A249FC4DB00F725C5 /* ReactiveExtensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38F8469249FC4DB00F725C5 /* ReactiveExtensiones.swift */; };
 		F3C7A8DF249AC0DE00AF7A9C /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7A8DE249AC0DE00AF7A9C /* UserListViewModel.swift */; };
 		F3CFA92924991B0400348ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFA92824991B0400348ADC /* AppDelegate.swift */; };
 		F3CFA93224991B0500348ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA93124991B0500348ADC /* Assets.xcassets */; };
@@ -86,7 +86,6 @@
 		F36CF173249921A200CF3D5B /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		F36CF1792499225200CF3D5B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		F36CF17A2499225200CF3D5B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		F36CF1822499233300CF3D5B /* ReactiveExtensiones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveExtensiones.swift; sourceTree = "<group>"; };
 		F36CF1852499243200CF3D5B /* AnimateloadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateloadingView.swift; sourceTree = "<group>"; };
 		F36CF1862499243200CF3D5B /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		F36CF1872499243200CF3D5B /* LoadingViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewable.swift; sourceTree = "<group>"; };
@@ -118,6 +117,7 @@
 		F37941DB2499F2DE00BDFAE0 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		F37941DC2499F2DE00BDFAE0 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		F37941DE2499F8F100BDFAE0 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		F38F8469249FC4DB00F725C5 /* ReactiveExtensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveExtensiones.swift; sourceTree = "<group>"; };
 		F3C7A8DE249AC0DE00AF7A9C /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		F3CFA92524991B0400348ADC /* ExampleSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CFA92824991B0400348ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -268,13 +268,13 @@
 		F36CF1762499223700CF3D5B /* UIKit Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				F36CF1F92499728400CF3D5B /* UIViewExtentions */,
-				F36CF1F42499723800CF3D5B /* MessageView */,
 				F36CF1B42499306100CF3D5B /* Bundle */,
 				F36CF1772499225200CF3D5B /* Coordinator */,
 				F36CF1842499243200CF3D5B /* LoadingView */,
-				F36CF1812499233300CF3D5B /* Rx */,
+				F36CF1F42499723800CF3D5B /* MessageView */,
+				F38F8468249FC4CD00F725C5 /* Rx */,
 				F36CF18D2499285300CF3D5B /* UIViewController Extentions */,
+				F36CF1F92499728400CF3D5B /* UIViewExtentions */,
 			);
 			path = "UIKit Utilities";
 			sourceTree = "<group>";
@@ -294,15 +294,6 @@
 				F36CF1792499225200CF3D5B /* MainCoordinator.swift */,
 			);
 			path = Maincordinator;
-			sourceTree = "<group>";
-		};
-		F36CF1812499233300CF3D5B /* Rx */ = {
-			isa = PBXGroup;
-			children = (
-				F36CF1822499233300CF3D5B /* ReactiveExtensiones.swift */,
-			);
-			name = Rx;
-			path = "../../../../setareyek-new/SetareYek/Utilities/UIkit Utilities/Rx";
 			sourceTree = "<group>";
 		};
 		F36CF1842499243200CF3D5B /* LoadingView */ = {
@@ -502,6 +493,14 @@
 				F37941DC2499F2DE00BDFAE0 /* SignupVC.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F38F8468249FC4CD00F725C5 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				F38F8469249FC4DB00F725C5 /* ReactiveExtensiones.swift */,
+			);
+			path = Rx;
 			sourceTree = "<group>";
 		};
 		F3C7A8DD249AC0C900AF7A9C /* ViewModel */ = {
@@ -713,6 +712,7 @@
 				F36CF17D249922CD00CF3D5B /* DataManager.swift in Sources */,
 				F37941DD2499F70600BDFAE0 /* SignupVC.swift in Sources */,
 				F36CF18B2499243C00CF3D5B /* LoadingViewable.swift in Sources */,
+				F38F846A249FC4DB00F725C5 /* ReactiveExtensiones.swift in Sources */,
 				F36CF1B62499306E00CF3D5B /* Bundle + ChangeLanguage.swift in Sources */,
 				F36CF1E92499457100CF3D5B /* LoginManager.swift in Sources */,
 				F36CF1F124996BBF00CF3D5B /* LoginVC.swift in Sources */,
@@ -720,7 +720,6 @@
 				F354AA7F249AB6B90087E0DC /* UserListsVC.swift in Sources */,
 				F3C7A8DF249AC0DE00AF7A9C /* UserListViewModel.swift in Sources */,
 				F36CF1D324993B7500CF3D5B /* LoginViewModel.swift in Sources */,
-				F36CF1832499233300CF3D5B /* ReactiveExtensiones.swift in Sources */,
 				F36CF17F249922D300CF3D5B /* LanguageManager.swift in Sources */,
 				F36CF1FB2499729900CF3D5B /* UIView + Tap.swift in Sources */,
 				F36CF1CB249939A100CF3D5B /* ProfileCoordinator.swift in Sources */,
